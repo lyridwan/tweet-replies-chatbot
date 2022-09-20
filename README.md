@@ -8,7 +8,8 @@ How to run this thing?
 ---------------------- 
 1. Copy and/or rename `.env.example` to `.env`
 2. Paste your Twitter API bearer token to `TWEET_API_BEARER_TOKEN` variable on `.env` file
-3. From the command-line:
+3. Install dependency by using `pip install -r requirements.txt`
+4. From the command-line:
 ```
     $ python main.py
     
