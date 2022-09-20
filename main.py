@@ -1,23 +1,19 @@
 
 import argparse
 import itertools
+import os
 import random
 import re
 import readline
 import sys
 import traceback
 import urllib.request
-from pathlib import Path
-from typing import Dict, List
 
 import tweepy
-from bs4 import BeautifulSoup, SoupStrainer
+from dotenv import load_dotenv
 
-API_KEY=''
-API_SECRET = ''
-ACCESS_TOKEN = ''
-ACCESS_TOKEN_SECRET = ''
-BEARER_TOKEN = ''
+load_dotenv()
+BEARER_TOKEN = os.getenv('TWEET_API_BEARER_TOKEN')
 
 client = tweepy.Client(bearer_token=BEARER_TOKEN)
 
