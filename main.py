@@ -1,13 +1,10 @@
 
-import argparse
 import itertools
 import os
 import random
 import re
-import readline
 import sys
 import traceback
-import urllib.request
 
 import tweepy
 from dotenv import load_dotenv
