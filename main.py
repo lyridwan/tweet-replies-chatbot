@@ -73,7 +73,7 @@ def fetch_result(keyword):
             break;       
     
 
-    if len(reps) >= 2:
+    if len(reps) >= 1:
         return '🌻 ' + random.choice(reps)
     else:
         if tweets.data is not None:
